@@ -1,6 +1,6 @@
 # Hi, I'm Jinho
 
-Software engineering student building backend systems from the ground up. I care
+Computer Science student building backend systems from the ground up. I care
 less about how much I can stack together and more about being able to defend
 every decision: why a retry queue over a cron job, why a database constraint over
 an application-level check, what breaks under concurrency, and how I handle it.
@@ -9,7 +9,7 @@ Most of what I build lives in the unglamorous parts of the happy path: retries,
 partial failures, idempotency, and the edge cases that only show up in
 production.
 
-**Open to:** backend, platform, infrastructure, and developer-tooling roles.
+**Interests:** backend, platform, infrastructure, and developer-tooling roles.
 
 ## What I Build
 
