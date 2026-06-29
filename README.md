@@ -9,7 +9,7 @@ Most of what I build lives in the unglamorous parts of the happy path: retries,
 partial failures, idempotency, and the edge cases that only show up in
 production.
 
-## Selected Work
+## Currently Working On
 
 **[Reliable Webhook Delivery Platform](https://github.com/jinhobh/reliable-webhook-platform)**  
 `FastAPI` · `PostgreSQL` · `SQLAlchemy` · `Alembic` · `Docker`
