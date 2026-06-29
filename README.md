@@ -9,18 +9,6 @@ Most of what I build lives in the unglamorous parts of the happy path: retries,
 partial failures, idempotency, and the edge cases that only show up in
 production.
 
-**Interests:** backend, platform, infrastructure, and developer-tooling roles.
-
-## What I Build
-
-```mermaid
-flowchart LR
-    A[API + product needs] --> B[Typed backend service]
-    B --> C[Durable data model]
-    C --> D[Async work + retries]
-    D --> E[Tests, CI, docs]
-```
-
 ## Selected Work
 
 **[Reliable Webhook Delivery Platform](https://github.com/jinhobh/reliable-webhook-platform)**  
