@@ -33,14 +33,6 @@ flowchart LR
     Retry --> DB
 ```
 
-**[tracegraph](https://github.com/jinhobh/tracegraph)**  
-Python static dependency analyzer for import graphs, circular-import detection,
-and test impact analysis.
-
-**[Granola](https://github.com/jinhobh/granola)**  
-Mobile-first product planning around content models, privacy, search, metadata,
-and user flows.
-
 ## Currently Learning
 
 - State machine modeling for resource lifecycles
