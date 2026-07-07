@@ -23,14 +23,15 @@ flowchart LR
 
 ## Selected Work
 
-**[Reliable Webhook Delivery Platform](https://github.com/jinhobh/reliable-webhook-platform)**  
+**[Reliable Webhook Delivery Platform](https://github.com/jinhobh/reliable-webhook-platform)** — [live demo](https://hookit.fly.dev/dashboard/)  
 `FastAPI` · `PostgreSQL` · `SQLAlchemy` · `Alembic` · `Docker`
 
-A service for reliably delivering webhooks to subscriber endpoints. Payloads are
-signed with HMAC-SHA256 so receivers can verify authenticity, and failed
-deliveries are retried with backoff rather than dropped. The interesting work is
-the failure handling: what counts as a delivery, when to give up, and how to keep
-retries from stepping on each other.
+At-least-once webhook delivery: HMAC-signed, retried with backoff and jitter,
+dead-lettered and redriven, Postgres as the queue instead of a broker. The live
+dashboard streams real events into a real Discord channel — kill the receiver
+and watch retries → backoff → dead-letter → redrive happen on live traffic.
+Built with a self-advancing agent pipeline (Planner → Builder → Reviewer,
+CI-gated auto-merge; see the repo's `CLAUDE.md`).
 
 ```mermaid
 flowchart LR
@@ -55,10 +56,11 @@ and user flows.
 
 ## Currently Learning
 
-- State machine modeling for resource lifecycles
-- Idempotency and safe retries
-- Concurrency control through database constraints
-- Cryptographic token hashing and secure invite/link design
+- Agentic engineering: multi-agent pipelines with CI as the trust boundary
+  between them
+- SSRF-aware and other adversarial-input hardening for services that accept
+  user-supplied URLs
+- Multi-tenant data isolation patterns at the database layer
 
 **Next up:** a real-time collaborative editor to get hands-on with WebSockets and
 presence management.
