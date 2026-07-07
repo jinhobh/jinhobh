@@ -1,6 +1,6 @@
 # Hi, I'm Jinho
 
-Software engineering student building backend systems from the ground up. I care
+Computer Science student building backend systems from the ground up. I care
 less about how much I can stack together and more about being able to defend
 every decision: why a retry queue over a cron job, why a database constraint over
 an application-level check, what breaks under concurrency, and how I handle it.
@@ -9,19 +9,7 @@ Most of what I build lives in the unglamorous parts of the happy path: retries,
 partial failures, idempotency, and the edge cases that only show up in
 production.
 
-**Open to:** backend, platform, infrastructure, and developer-tooling roles.
-
-## What I Build
-
-```mermaid
-flowchart LR
-    A[API + product needs] --> B[Typed backend service]
-    B --> C[Durable data model]
-    C --> D[Async work + retries]
-    D --> E[Tests, CI, docs]
-```
-
-## Selected Work
+## Currently Working On
 
 **[Reliable Webhook Delivery Platform](https://github.com/jinhobh/reliable-webhook-platform)** — [live demo](https://hookit.fly.dev/dashboard/)  
 `FastAPI` · `PostgreSQL` · `SQLAlchemy` · `Alembic` · `Docker`
@@ -45,14 +33,6 @@ flowchart LR
     Attempts --> DB
     Retry --> DB
 ```
-
-**[tracegraph](https://github.com/jinhobh/tracegraph)**  
-Python static dependency analyzer for import graphs, circular-import detection,
-and test impact analysis.
-
-**[Granola](https://github.com/jinhobh/granola)**  
-Mobile-first product planning around content models, privacy, search, metadata,
-and user flows.
 
 ## Currently Learning
 
