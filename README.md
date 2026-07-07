@@ -65,3 +65,4 @@ can't be explained with its tradeoffs, it's not finished yet.
 ## Reach Me
 
 - Email: jinho.baej@gmail.com
+- Website: [jinhobae.xyz](https://jinhobae.xyz)
