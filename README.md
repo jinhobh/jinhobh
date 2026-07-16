@@ -22,6 +22,24 @@ flowchart LR
     Retry --> DB
 ```
 
+## TraceGraph
+
+[Repo](https://github.com/jinhobh/TraceGraph)  
+`Python` · `ast` · `stdlib-only` · `pytest` · `coverage.py`
+
+Static dependency analyzer for Python. Parses each module with `ast`, resolves imports into a directed graph, then uses it to detect circular imports and select the tests affected by a change. Every edge is tagged `module` / `function` / `type_checking` and `module` / `symbol`, so a cycle is flagged as load-time only when it runs through a `symbol` edge — the pattern that can actually raise `ImportError`. Test impact analysis is validated against coverage.py ground truth on Flask and requests: **recall 1.00**, zero false negatives.
+
+```mermaid
+flowchart LR
+    Src[source tree] --> Discovery[discover modules]
+    Discovery --> Parse[ast parse]
+    Parse --> Resolver[resolve imports]
+    Resolver -->|tagged edges| Graph[(module graph)]
+    Graph --> Cycles[circular imports]
+    Graph --> Deps[transitive deps]
+    Graph --> TIA[test impact]
+```
+
 ## Tools
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
