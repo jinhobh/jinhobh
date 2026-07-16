@@ -1,25 +1,13 @@
-# Hi, I'm Jinho
+# Jinho
 
-Computer Science student building backend systems from the ground up. I care
-less about how much I can stack together and more about being able to defend
-every decision: why a retry queue over a cron job, why a database constraint over
-an application-level check, what breaks under concurrency, and how I handle it.
+CS student building backend systems.
 
-Most of what I build lives in the unglamorous parts of the happy path: retries,
-partial failures, idempotency, and the edge cases that only show up in
-production.
+## Reliable Webhook Delivery Platform
 
-## Currently Working On
-
-**[Reliable Webhook Delivery Platform](https://github.com/jinhobh/reliable-webhook-platform)** — [live demo](https://hookit.fly.dev/dashboard/)  
+[Repo](https://github.com/jinhobh/reliable-webhook-platform) · [Live demo](https://hookit.fly.dev/dashboard/)  
 `FastAPI` · `PostgreSQL` · `SQLAlchemy` · `Alembic` · `Docker`
 
-At-least-once webhook delivery: HMAC-signed, retried with backoff and jitter,
-dead-lettered and redriven, Postgres as the queue instead of a broker. The live
-dashboard streams real events into a real Discord channel — kill the receiver
-and watch retries → backoff → dead-letter → redrive happen on live traffic.
-Built with a self-advancing agent pipeline (Planner → Builder → Reviewer,
-CI-gated auto-merge; see the repo's `CLAUDE.md`).
+At-least-once webhook delivery: HMAC-signed, retried with backoff and jitter, dead-lettered and redriven, Postgres as the queue instead of a broker. The live dashboard streams real events into a Discord channel — kill the receiver and watch retries → backoff → dead-letter → redrive on live traffic.
 
 ```mermaid
 flowchart LR
@@ -34,17 +22,6 @@ flowchart LR
     Retry --> DB
 ```
 
-## Currently Learning
-
-- Agentic engineering: multi-agent pipelines with CI as the trust boundary
-  between them
-- SSRF-aware and other adversarial-input hardening for services that accept
-  user-supplied URLs
-- Multi-tenant data isolation patterns at the database layer
-
-**Next up:** a real-time collaborative editor to get hands-on with WebSockets and
-presence management.
-
 ## Tools
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
@@ -56,13 +33,7 @@ presence management.
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?logo=pytest&logoColor=white)
 
-## How I Work
+## Reach me
 
-I learn by building. I'd rather ship a small thing that handles the hard cases
-correctly than a big thing that only works on the demo. If a design decision
-can't be explained with its tradeoffs, it's not finished yet.
-
-## Reach Me
-
-- Email: jinho.baej@gmail.com
-- Website: [jinhobae.xyz](https://jinhobae.xyz)
+- [jinho.baej@gmail.com](mailto:jinho.baej@gmail.com)
+- [jinhobae.xyz](https://jinhobae.xyz)
