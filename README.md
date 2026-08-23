@@ -1,6 +1,6 @@
 # Jinho
 
-CS student building backend systems.
+Whatever I find interesting
 
 ## Reliable Webhook Delivery Platform
 
