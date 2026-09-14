@@ -12,8 +12,3 @@ Whatever I find interesting
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?logo=pytest&logoColor=white)
-
-## Reach me
-
-- [jinho.baej@gmail.com](mailto:jinho.baej@gmail.com)
-- [jinhobae.xyz](https://jinhobae.xyz)
