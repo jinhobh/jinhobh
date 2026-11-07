@@ -1,3 +1,3 @@
-# Jinho
+# jb
 
 Whatever I find interesting
